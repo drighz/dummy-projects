@@ -1,0 +1,65 @@
+function onload()
+{
+
+ drawChart(defaultChartVal);
+                
+
+}
+
+function drawChart()
+{
+
+   var chartData = retrieveChartData();
+
+   var options = setChartOptions( 'Google Charts','400','300')
+
+   var chart = selectChart("object selected");
+
+   chart.draw(data, options);
+}
+
+
+function retrieveChartData() {
+
+   //Retrieve Data from Sample Json Data
+
+   var data = new google.visualization.DataTable();
+
+   // Set Graph Data Parameters
+   // e.g data.addColumn('[datatype]', '[name]');
+
+   data.addColumn('number', 'Slices');
+   data.addColumn('number', 'Slices');
+
+   // Append Data Values
+
+  foreach(data)
+  { 
+     data.addRows([
+            ['Mushrooms', 3],
+                  ]);
+   }
+
+   return data;
+
+}
+
+function setChartOptions(title,width, height)
+{
+   return options = {'title': title,
+                       'width': width,
+                       'height': height};
+}
+
+
+function selectChart(chartValue)
+{
+   switch ()
+     case :
+       return 
+
+    default :
+      return
+
+}
+
